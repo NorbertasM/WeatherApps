@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="time-container">
+        <div class="date-container">
+          <div class="time" id="time"><span id="am-pm"></span></div>
+          <div class="date" id="date"></div>
+        </div>
+      </div>
+      <div class="infocard" id="info-card">
+        
+      
+      </div>
+      <div class="card" id="card">
+        <div class="search" id="search">
+          <input type="text" class="search-bar" id="search-bar" />
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+  
+        <div class="weather loading"></div>
+      </div>
+
+      <div class="current-info">
+        
+        <div class="date-container">
+          <div class="time" id="time"><span id="am-pm"></span></div>
+          <div class="date" id="date"></div>
+
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+             
+            </div>
+            
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="future-forecast" id="forecast">
+      <div class="today" id="current-temp">
+      </div>
+        <div class="weather-forecast" id="weather-forecast">
+        </div>
+      </div>
+    </div>
+    
+    <script src="js.js"></script>
+  </body>
+</html>
