@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,89 +5,94 @@
 }
 
 body {
-  font-family: "poppins", sans-serif;
-  background: url(https://d279m997dpfwgl.cloudfront.net/wp/2017/12/weather_album-art-1000x1000.jpg);
-  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://source.unsplash.com/1600x900/?vilnius");
+  background-position: center;
   background-size: cover;
-  overflow: hidden;
+  background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
+
 .container {
   align-items: center;
-  padding: 20px 70px;
+  padding: 0px 70px;
   color: #fff;
 }
 
-.date-container {
-  font-weight: 100;
-}
 .date-container .time {
-  font-size: 70px;
   font-weight: 100;
-}
-.date-container #am-pm {
-  font-size: 30px;
-  margin-left: 20px;
-}
-.date-container .date {
-  font-size: 30px;
-}
-.place-container {
-  text-align: end;
 }
 
+.time-string {
+  margin-left: 20px;
+}
+
+
 .future-forecast {
-  background: rgba(24, 24, 27, 0.8);
+  background: rgba(32, 32, 32, 0.8);
   padding: 25px;
   position: fixed;
   bottom: 0;
-
+  right: 0;
   display: flex;
   color: rgb(255, 255, 255);
-  width: 100%;
+  width: 100vw;
   align-items: center;
   justify-content: center;
-  opacity: 0;
 }
-.future-forecast .today {
+
+.today {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.future-forecast .today .day {
+
+.day {
   padding: 5px;
+  margin-top: -15px;
   background: #3c3c44;
-  border-radius: 50px;
+  border-radius: 20px;
   text-align: center;
 }
-.future-forecast .today .temperature {
-  font-size: 18px;
-  padding: 15px;
+
+.temperature {
+  padding: 10px;
 }
-.future-forecast .weather-forecast {
+
+.weather-forecast {
   display: flex;
+  justify-content: space-around;
+  width: 80%;
 }
-.weather-forecast .weather-forecast-item {
+
+.temp-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  height: 140px;
+}
+
+.temp-inner {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.weather-forecast-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 10px;
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 15px;
+  max-height: 200px;
+  background-color: #00000091;
 }
 
-.weather-forecast .weather-forecast-item .day {
-  padding: 5px 15px;
-  background: #3c3c44;
-  border-radius: 60px;
-  text-align: center;
-}
-
-.weather-forecast .weather-forecast-item .temperature {
-  font-weight: 100;
-}
 @media only screen and (max-width: 730px) {
   .future-forecast {
     justify-content: start;
@@ -106,8 +109,6 @@ body {
   width: 100%;
   max-width: 500px;
   margin: auto;
-
-  justify-items: center;
 }
 
 .search {
@@ -132,7 +133,7 @@ i {
 .feelsLike,
 .temp,
 .city {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .temp {
@@ -141,30 +142,13 @@ i {
 
 .daylength,
 .description,
-/* .humidity, */
+.humidity,
 .sunrise,
 .sunset,
 .wind {
-  font-size: 1.5rem;
   margin: 10px 0;
 }
 
 .loading {
   display: none;
-}
-.infocard {
-  background-color: #000000d0;
-  position: flex;
-  position: center;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 30px;
-  width: 100%;
-  height: 50%;
-  max-width: 500px;
-  margin: auto;
-  justify-items: center;
-
-  opacity: 0;
-  text-align: center;
 }

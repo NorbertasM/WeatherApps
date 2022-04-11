@@ -6,52 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css.css" />
     <title>Weather App</title>
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+      />
   </head>
   <body>
     <div class="container">
-      <div class="time-container">
+      <div>
         <div class="date-container">
-          <div class="time" id="time"><span id="am-pm"></span></div>
-          <div class="date" id="date"></div>
+          <div class="time"><span class="time-string"></span></div>
         </div>
-      </div>
-      <div class="infocard" id="info-card">
-        
-      
-      </div>
-      <div class="card" id="card">
-        <div class="search" id="search">
-          <input type="text" class="search-bar" id="search-bar" />
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-  
-        <div class="weather loading"></div>
       </div>
 
-      <div class="current-info">
-        
-        <div class="date-container">
-          <div class="time" id="time"><span id="am-pm"></span></div>
-          <div class="date" id="date"></div>
-
-          <div class="others" id="current-weather-items">
-            <div class="weather-item">
-             
-            </div>
-            
-            </div>
-          </div>
+      <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar">
+            <button >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </div>
-        
-      </div>
+
+        <div class="weather loading">
+            <h2 class="city"></h2>
+            <div class="temp-container">
+              <div class="temp-inner">
+                <div class="temp"></div>
+                <div class="feelsLike"></div>
+              </div>
+              <div class="temp-inner">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="icon">
+              </div>
+            </div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+            <div class="sunrise"></div>
+            <div class="sunset"></div>
+            <div class="daylength"></div>
+            <div class="windDirection"></div>
+        </div>
+
     </div>
     
-    <div class="future-forecast" id="forecast">
-      <div class="today" id="current-temp">
+    <div class="future-forecast loading">
+      <div class="today">
       </div>
-        <div class="weather-forecast" id="weather-forecast">
+        <div class="weather-forecast">
         </div>
       </div>
     </div>
