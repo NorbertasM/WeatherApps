@@ -16,11 +16,8 @@
   </head>
   <body>
     <div class="container">
-      <div>
-        <div class="date-container">
-          <div class="time"><span class="time-string"></span></div>
-        </div>
-      </div>
+      <div class="inputs-container">
+        <div id="map" class="map"></div>
 
       <div class="card">
         <div class="search">
@@ -51,15 +48,21 @@
         </div>
 
     </div>
+  </div>
     
     <div class="future-forecast loading">
       <div class="today">
       </div>
         <div class="weather-forecast">
         </div>
+        <button class="button">Grafikai</button>
       </div>
     </div>
     
     <script src="js.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByr6lWdjju7qifvj1Yk-VW9jQBOLeTnL8&callback=initMap"
+      async
+    ></script>
   </body>
 </html>

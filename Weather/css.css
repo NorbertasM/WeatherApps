@@ -29,6 +29,19 @@ body {
   margin-left: 20px;
 }
 
+.button {
+  width: 10rem;
+  font-size: 1.2rem;
+  height: 5rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 1px black;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+}
 
 .future-forecast {
   background: rgba(32, 32, 32, 0.8);
@@ -101,14 +114,26 @@ body {
   }
 }
 
+.inputs-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 70vw;
+}
+
 .card {
   background-color: #000000d0;
   color: #fff;
   padding: 2rem;
   border-radius: 30px;
-  width: 100%;
+  width: fit-content;
   max-width: 500px;
   margin: auto;
+}
+
+.map {
+  min-height: 400px;
+  min-width: 400px;
 }
 
 .search {
